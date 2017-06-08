@@ -1,0 +1,7 @@
+
+# unnecessary files
+*.gitignore
+.sass-cache
+*.css.map
+.readme.txt
+.README.md
