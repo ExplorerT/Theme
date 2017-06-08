@@ -745,19 +745,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-/*
 .site-header {
 	position: relative;
 	padding: 1em;
-	font-family: $font__sans;
+	font-family: "Roboto", Georgia, Cambria, sans-serif;
 	color: #fff;
-	background-color: $color__skin;
-	
-	@media screen and (min-width: $query__small) {
+	background-color: #002254;
+}
+
+@media screen and (min-width: 600px) {
+	.site-header {
 		padding: 1em 2em;
 	}
 }
 
+/*
 .site-branding {
 	min-height: 65px;
 }
