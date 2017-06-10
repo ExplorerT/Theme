@@ -44,7 +44,7 @@ function lava_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'lava' ),
+		'menu-1' => esc_html__( 'Lava Header', 'lava' ),
 	) );
 
 	/*
@@ -67,6 +67,13 @@ function lava_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Add theme support for Custom Logo
+	add_theme_support ('custom-logo', array(
+		'width' => 90,
+		'height' => 90,
+		'flex-width' => true,
+		));
 }
 endif;
 add_action( 'after_setup_theme', 'lava_setup' );
