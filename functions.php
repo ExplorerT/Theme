@@ -179,7 +179,11 @@ function lava_scripts() {
 
 	wp_enqueue_style( 'lava-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'lava-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'lava-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_localize_script( 'lava-navigation', 'lavaScreenReaderText', array(
+		'expand' => __( 'Expand child menu', 'lava'),
+		'collapse' => __( 'Collapse child menu', 'lava'),
+	));
 
 	wp_enqueue_script( 'lava-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
