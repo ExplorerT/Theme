@@ -2,7 +2,7 @@
 	display: block;
 	
 	font-family: $font_montserrat;
-	font-weight: 400;
+	font-weight: 100;
 	clear: left;
 	
 	ul {
@@ -11,6 +11,7 @@
 		margin: 0;
 		padding-top: 1em;
 		padding-left: 0;
+		font-size: 16px;
 
 		ul {
 			display: none;
