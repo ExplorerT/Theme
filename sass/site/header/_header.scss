@@ -85,7 +85,7 @@
 		width: 55%;
 	}
 
-	.main-navigation ul {
+	/*.main-navigation ul {
         list-style: none;
         margin-top: 15px;
         padding-left: 0;
@@ -96,7 +96,7 @@
                 padding-right: 20px !important;
                 padding-left: 20px !important;
             }
-}
+	}*/
 
 
     .main-header-content {
@@ -161,3 +161,8 @@
     }
 
 }
+
+/* 
+Header Menu
+*/
+@import "header-menu";
