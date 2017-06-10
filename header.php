@@ -46,4 +46,37 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+	<!-- #header-image -->
+	<?php if ( get_header_image() && is_front_page()) : ?>
+    <div id="site-header">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+        </a>
+    </div>
+    <!-- #header-image -->    
+<?php endif; ?>
+
+<!-- header content -->
+<?php if (is_front_page()) : ?>
+<div class="main-header-content">
+    	<h1> Welcome to lava!</h1>
+    	<h2>What do you want to do?</h2>
+    		<ul id="icon-container">
+    			<li id="map-icon">
+    				<img src="http://localhost:8888/LAVA/wp-content/uploads/2017/06/Picture1-1.png">
+    				<h5>Find a facility location</h5>
+    			</li>
+    			<li id="facility-icon">
+    				<img src="http://localhost:8888/LAVA/wp-content/uploads/2017/06/Picture2-1.png">
+    				<h5>Find a facility by feature</h5>
+    			</li>
+    			
+    		</ul>
+            
+</div>
+<!--header content
+
+<?php endif; ?>
+
+
 	<div id="content" class="site-content">
