@@ -10,9 +10,9 @@
 .site-header {
 	position: relative;
 	padding: 1em;
-	font-family: $font_roboto;
+	font-family: $font_montserrat;
 	color: #fff;
-	background-color: $color__skin;
+	background-color: #191d48;
 
 	
 	@media screen and (min-width: $query__small) {
@@ -21,15 +21,35 @@
 }
 
 .site-branding {
-	min-height: 21px;
+	display: flex;
+	min-height: 65px;
+}
+
+.custom-logo-link {
+	margin-right: 1em;
+	img {
+		display: block;
+		height: 65px;
+		width: auto;
+	}
+}
+
+.site-branding__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 65px;
 }
 
 .site-title {
-	margin: 0;
+	margin-left: -17px;
 	padding: 0;
-	font-size: 1.6em;
-	font-weight: 900;
+	font-size: 2em;
+	font-weight: 100;
 	line-height: 1em;
+	margin-top: 10px;
+
+
 	
 	a {
 		color: white;
@@ -47,111 +67,97 @@
 	font-size: .9em;
 	font-style: italic;
 	font-weight: 100;
-	display: none;
 }
 
 @media screen and (min-width: $query__medium) {
 	.site-header {
 		display: flex;
 		justify-content: space-between;
-
-
+		height: 90px;
 	}
-
-	.site-title {
-		font-family: $font_montserrat;
-		font-weight: 100;
-		font-size: 2em;
-	}
-
+	
 	.site-branding {
 		width: 35%;
-		display: inline-block;
+		flex: 1 0 auto;
 	}
-
+	
 	.site-navigation {
 		width: 55%;
-		text-transform: uppercase;
-		//color: #fff;
 	}
 
 	.main-navigation ul {
-	    list-style: none;
-	    margin: 0;
-	    padding-left: 0;
-	    float: right;
-	    font-size: .75em;
+        list-style: none;
+        margin-top: 15px;
+        padding-left: 0;
+        float: right;
+        font-size: .75em;
 
-	    	li a {
-				padding-right: 20px !important;
-				padding-left: 20px !important;
-			}
-
-	}
-
-	.main-header-content {
-		margin: auto;
-    	width: 100%;
-    	//border: 3px solid green;
-    	padding: 10px;
-    	text-align: center;
-    	background-color: white;
-    	//font-weight: 200;
-    	font-family: $font_montserrat;
-    	//background-image:  url("http://localhost:8888/LAVA/wp-content/uploads/2017/06/todd-quackenbush-27493.jpg");
-
-		h1 {
-			font-size: 4.6em;
-		    //font-weight: 200;
-		    text-align: center;
-		    text-transform: uppercase;
-		    line-height: 10px;
-		    margin-top: 150px;
-		    font-weight: 200;
-		}
-
-		h2 {
-			font-size: 2.6em;
-			 font-weight: 200;
-		  
-		    
-		}
-
-		ul {
-			
-    		display: flex;
-    		list-style:none;
-    		text-align: center;
-    		//padding: 0;
-  			width: 550px;
- 			margin: 0 auto;
-
-
-    		li {
-
-    			//clear: both;
-    			//padding-right: 70px;
-
-    		}
-
-    		h5 {
-
-    		    font-size: 1.3em;
-    			font-weight: 100;
-    			
-    		}
-
-    		img {
-    			border-radius: 130px;
-    			background-color: #ddd;
-    			width: 135px;
-    			height: auto;
-    		}
-
-		}
-
-	}
-
+            li a {
+                padding-right: 20px !important;
+                padding-left: 20px !important;
+            }
 }
 
-	
+
+    .main-header-content {
+        margin: auto;
+        width: 100%;
+        border-top: 3px solid red;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        font-family: $font_montserrat;
+        //background-image:  url("http://localhost:8888/LAVA/wp-content/uploads/2017/06/todd-quackenbush-27493.jpg");
+
+        h1 {
+            font-size: 4.6em;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 10px;
+            margin-top: 120px;
+            font-weight: 200;
+        }
+
+        hr {
+        	width: 250px;
+        	background-color: #d00;
+        	height: 2px;
+        	margin-top: 80px;
+
+        }
+
+        h2 {
+            font-size: 2.6em;
+             font-weight: 200;  
+            
+        	}
+
+        ul {
+            
+            display: flex;
+            list-style:none;
+            text-align: center;
+            width: 550px;
+            margin: 0 auto;
+
+
+            h5 {
+
+                font-size: 1.3em;
+                font-weight: 100;
+                
+            }
+
+            img {
+                border-radius: 130px;
+                //border: 2px solid red;
+                background-color: #ddd;
+                width: 135px;
+                height: auto;
+            }
+
+        }
+
+    }
+
+}
