@@ -1,5 +1,5 @@
 /*!
-Theme Name: LAVA-WIP
+Theme Name: LAVA-error
 Theme URI: http://atoftech.com/
 Author: Tolu Agbaje
 Author URI: http://atoftech.com/
@@ -840,7 +840,7 @@ Header Menu
 .main-navigation {
 	display: block;
 	font-family: "Montserrat", "Lucida Grande" sans-serif;
-	font-weight: 100;
+	font-weight: 400;
 	clear: left;
 }
 
@@ -850,7 +850,6 @@ Header Menu
 	margin: 0;
 	padding-top: 1em;
 	padding-left: 0;
-	font-size: 16px;
 }
 
 .main-navigation ul ul {
@@ -899,7 +898,7 @@ Header Menu
 }
 
 .main-navigation .menu-item-has-children,
-.main-navigation .page-item-has-children {
+.main-navigation .page_item_has_children {
 	min-width: 218px;
 }
 
@@ -931,7 +930,7 @@ button.dropdown-toggle {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Toggle small menu and sub-menus on */
+/* Toggle small menu and children on */
 .toggled-on ul,
 .sub-menu.toggled-on {
 	display: block;
@@ -980,6 +979,13 @@ button.dropdown-toggle {
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
 		padding-top: 0;
+		/* If you want dropdowns to open on hover, uncomment this: */
+		/*
+			li:hover > ul,
+				li:focus > ul {
+				display: block;
+			}
+			*/
 	}
 }
 
